@@ -12,11 +12,14 @@ namespace DoAnMonHoc.DAL
     class DataHelper
     {
         public static OracleConnection con = null;
+        int a;
+        int b;
+        int c;
         public DataHelper()
         {
 
             string strCon = @"DATA SOURCE = DELL:1521/ORCL.LOCALDOMAIN; USER ID=MINHSANG;PASSWORD=21062002";
-            con = new OracleConnection(strCon1);
+            con = new OracleConnection(strCon);
         }
 
         public DataTable ExecuteQuery(string query)

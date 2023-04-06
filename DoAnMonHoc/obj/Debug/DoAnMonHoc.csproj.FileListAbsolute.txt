@@ -33,3 +33,38 @@ F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAn
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
 F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
