@@ -16,7 +16,7 @@ namespace DoAnMonHoc.DAL
         {
 
             string strCon = @"DATA SOURCE = DELL:1521/ORCL.LOCALDOMAIN; USER ID=MINHSANG;PASSWORD=21062002";
-            con = new OracleConnection(strCon);
+            con = new OracleConnection(strCon1);
         }
 
         public DataTable ExecuteQuery(string query)
