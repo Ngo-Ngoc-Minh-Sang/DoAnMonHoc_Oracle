@@ -75,5 +75,9 @@ namespace DoAnMonHoc.GUI
             }
         }
 
+        private void dtgNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

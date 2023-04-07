@@ -46,6 +46,7 @@ namespace DoAnMonHoc.GUI
             this.dtgNhanVien.RowTemplate.Height = 24;
             this.dtgNhanVien.Size = new System.Drawing.Size(979, 337);
             this.dtgNhanVien.TabIndex = 0;
+            this.dtgNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgNhanVien_CellContentClick);
             // 
             // btnXoa
             // 
@@ -82,7 +83,7 @@ namespace DoAnMonHoc.GUI
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(260, 501);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(491, 17);
+            this.label1.Size = new System.Drawing.Size(453, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nút cập nhật chỉ cập nhật TÊN, SĐT, ĐỊA CHỈ của nhân viên có mã là NV001";
             // 
