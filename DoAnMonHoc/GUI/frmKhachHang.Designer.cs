@@ -44,7 +44,9 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.search = new System.Windows.Forms.Button();
+            this.loadDgv = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgKhachhang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 242);
+            this.label4.Location = new System.Drawing.Point(101, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 3;
@@ -92,7 +94,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(106, 156);
+            this.label5.Location = new System.Drawing.Point(99, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 4;
@@ -102,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(118, 207);
+            this.label6.Location = new System.Drawing.Point(99, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 5;
@@ -124,9 +126,9 @@
             // 
             // text_diachi
             // 
-            this.text_diachi.Location = new System.Drawing.Point(315, 242);
+            this.text_diachi.Location = new System.Drawing.Point(315, 240);
             this.text_diachi.Name = "text_diachi";
-            this.text_diachi.Size = new System.Drawing.Size(245, 22);
+            this.text_diachi.Size = new System.Drawing.Size(235, 22);
             this.text_diachi.TabIndex = 9;
             // 
             // text_sdt
@@ -139,9 +141,9 @@
             // 
             // text_gmail
             // 
-            this.text_gmail.Location = new System.Drawing.Point(315, 205);
+            this.text_gmail.Location = new System.Drawing.Point(315, 192);
             this.text_gmail.Name = "text_gmail";
-            this.text_gmail.Size = new System.Drawing.Size(245, 22);
+            this.text_gmail.Size = new System.Drawing.Size(235, 22);
             this.text_gmail.TabIndex = 11;
             // 
             // dtgKhachhang
@@ -158,11 +160,11 @@
             // btnCapNhat
             // 
             this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.Location = new System.Drawing.Point(394, 545);
+            this.btnCapNhat.Location = new System.Drawing.Point(378, 545);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(132, 64);
             this.btnCapNhat.TabIndex = 15;
-            this.btnCapNhat.Text = "Cập Nhật ";
+            this.btnCapNhat.Text = "Sửa";
             this.btnCapNhat.UseVisualStyleBackColor = true;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
@@ -180,7 +182,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(234, 545);
+            this.btnXoa.Location = new System.Drawing.Point(206, 545);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(132, 64);
             this.btnXoa.TabIndex = 13;
@@ -197,24 +199,45 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // txt_search
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(553, 545);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 64);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
-
+            this.txt_search.Location = new System.Drawing.Point(594, 75);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(239, 22);
+            this.txt_search.TabIndex = 17;
+            this.txt_search.Click += new System.EventHandler(this.txt_search_Click);
+            // 
+            // search
+            // 
+            this.search.Location = new System.Drawing.Point(668, 110);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.TabIndex = 18;
+            this.search.Text = "Tìm Kiếm";
+            this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // loadDgv
+            // 
+            this.loadDgv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadDgv.Location = new System.Drawing.Point(555, 545);
+            this.loadDgv.Name = "loadDgv";
+            this.loadDgv.Size = new System.Drawing.Size(132, 64);
+            this.loadDgv.TabIndex = 19;
+            this.loadDgv.Text = "Load";
+            this.loadDgv.UseVisualStyleBackColor = true;
+            this.loadDgv.Click += new System.EventHandler(this.loadDgv_Click);
             // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 634);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(883, 634);
+            this.Controls.Add(this.loadDgv);
+            this.Controls.Add(this.search);
+            this.Controls.Add(this.txt_search);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnThem);
@@ -258,6 +281,8 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.Button search;
+        private System.Windows.Forms.Button loadDgv;
     }
 }
