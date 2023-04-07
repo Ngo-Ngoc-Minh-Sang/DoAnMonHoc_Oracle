@@ -12,12 +12,8 @@ namespace DoAnMonHoc.DAL
     class DataHelper
     {
         public static OracleConnection con = null;
-        int a;
-        int b;
-        int c;
         public DataHelper()
         {
-
             string strCon = @"DATA SOURCE = DELL:1521/ORCL.LOCALDOMAIN; USER ID=MINHSANG;PASSWORD=21062002";
             con = new OracleConnection(strCon);
         }
@@ -57,7 +53,7 @@ namespace DoAnMonHoc.DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("execute non query error: " + ex.Message);
+                throw new Exception("Execute non query erorr: " + ex.Message);
             }
             finally
             {
