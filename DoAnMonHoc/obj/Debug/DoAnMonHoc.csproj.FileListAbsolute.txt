@@ -68,6 +68,7 @@ C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompil
 C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
 C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
 C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+<<<<<<< HEAD
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
@@ -105,3 +106,80 @@ C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csp
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
 C:\Users\DELL\Desktop\orcl\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmKhachHang.resources
+=======
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
+C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+>>>>>>> 331a1f95af5f5db40d9347e84d1b66443fb65ae4
