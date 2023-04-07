@@ -1,145 +1,80 @@
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
-F:\OneDrive - Ho Chi Minh city University of Food Industry\Ki_6_CNTT\Oracle\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Buffers.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Memory.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Text.Json.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.SuggestedBindingRedirects.cache
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
-C:\Users\ASUS\Desktop\New folder\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.SuggestedBindingRedirects.cache
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
-C:\Users\ASUS\Desktop\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
-C:\Users\PC\Desktop\DoAnMonHoc\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+<<<<<<< HEAD
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Buffers.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Memory.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Text.Json.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmKhachHang.resources
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+C:\Users\DELL\Desktop\DoAnOracle\DoAnMonHoc_Oracle\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.menu.resources
+=======
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe.config
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\DoAnMonHoc.exe
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\DoAnMonHoc.pdb
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\EntityFramework.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Buffers.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Memory.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Text.Json.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.ValueTuple.dll
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\EntityFramework.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Buffers.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Memory.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Text.Json.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\bin\Debug\System.ValueTuple.xml
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.AssemblyReference.cache
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.SuggestedBindingRedirects.cache
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DangNhap.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.DichVu.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.FormDonHang.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmHuongDanKetNoiDB.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.GUI.frmKhachHang.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.Properties.Resources.resources
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.GenerateResource.cache
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CoreCompileInputs.cache
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.csproj.CopyComplete
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.exe
+C:\Users\hdaz\Source\Repos\DoAnMonHoc_Oracle_4\DoAnMonHoc\obj\Debug\DoAnMonHoc.pdb
+>>>>>>> 5be84415aa808ad8c406a0ea23c50f7ba7d68fee
