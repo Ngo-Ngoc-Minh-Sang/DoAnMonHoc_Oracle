@@ -14,7 +14,7 @@ namespace DoAnMonHoc.DAL
         public static OracleConnection con = null;
         public DataHelper()
         {
-            string strCon = @"DATA SOURCE = DELL:1521/ORCL.LOCALDOMAIN; USER ID=MINHSANG;PASSWORD=21062002";
+            string strCon = @"DATA SOURCE = DESKTOP-GVKK8H6:1521/ORCL1; USER ID=system;PASSWORD=minhthu";
             con = new OracleConnection(strCon);
         }
 
