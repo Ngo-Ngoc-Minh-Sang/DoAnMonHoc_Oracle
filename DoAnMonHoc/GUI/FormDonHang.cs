@@ -26,6 +26,76 @@ namespace DoAnMonHoc.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            
+                
+            
+        }
+
+        private void btnHuyDH_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbxTenKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dtpNgayDatHang_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtTrongLuong_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtTenNguoiNhan_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
+        }
+
+        private void btnRefesh_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             btnThem.Enabled = true;
             dataGridView1.ClearSelection();
             dataGridView1.Enabled = false;
@@ -58,48 +128,7 @@ namespace DoAnMonHoc.GUI
             txtGiaDonHang.Text = string.Empty;
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                DialogResult result = MessageBox.Show("Bạn có muốn tiếp tục xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
-                    {
-                        dataGridView1.Rows.RemoveAt(item.Index);
-
-                    }
-
-                    DataRow delrow = dtDonHang.Rows.Find(txtMaDH.Text);
-                    if (delrow != null)
-                    {
-                        delrow.Delete();
-                        MessageBox.Show("Xóa Thành Công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Xóa Thất Bại");
-                    }
-
-                    btnCapNhat.Enabled = true;
-                    btnXoa.Enabled = false;
-                    btnSua.Enabled = false;
-                }
-
-            }
-            else
-                MessageBox.Show(this, "Chọn 1 dòng để xóa");
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtMaDH.Text))
             {
@@ -180,6 +209,21 @@ namespace DoAnMonHoc.GUI
                     btnThem.Enabled = false;
                     dataGridView1.Enabled = true;
 
+
+                    //THEM DOANH SO KH
+                    if (connection.State == ConnectionState.Closed)
+                        connection.Open();
+
+                    string sql = "update khachhang set doanhso = doanhso + :ds where makh = :makh";
+                    OracleCommand cmd = new OracleCommand(sql, connection);
+                    cmd.Parameters.Add(new OracleParameter(":ds", txtGiaDonHang.Text));
+                    cmd.Parameters.Add(new OracleParameter(":makh", cbxTenKH.SelectedValue.ToString()));
+                    cmd.ExecuteNonQuery();
+                    if (cmd.ExecuteNonQuery() > 0)
+                        connection.Close();
+
+
+
                     DonHangBinding();
                 }
             }
@@ -188,11 +232,49 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show(this, "Điền đầy đủ thông tin");
                 txtMaDH.Focus();
             }
-                
-            
         }
 
-        private void btnHuyDH_Click(object sender, EventArgs e)
+        private void btnRefesh_Click_1(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("Bạn có muốn tiếp tục xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+                    {
+                        dataGridView1.Rows.RemoveAt(item.Index);
+
+                    }
+
+                    DataRow delrow = dtDonHang.Rows.Find(txtMaDH.Text);
+                    if (delrow != null)
+                    {
+                        delrow.Delete();
+                        MessageBox.Show("Xóa Thành Công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa Thất Bại");
+                    }
+
+                    btnCapNhat.Enabled = true;
+                    btnXoa.Enabled = false;
+                    btnSua.Enabled = false;
+                }
+
+            }
+            else
+                MessageBox.Show(this, "Chọn 1 dòng để xóa");
+        }
+
+        private void btnHuyDH_Click_1(object sender, EventArgs e)
         {
             if (connection.State == ConnectionState.Closed)
             {
@@ -201,11 +283,11 @@ namespace DoAnMonHoc.GUI
             }
             string trangthai = cbxTrangThai.Items[3].ToString();
             string ma = txtMaDH.Text.Trim();
-            string sqlUpdate = "update donhang set ngayhuydon = SYSDATE where MADONHANG = '" + ma+"'";
+            string sqlUpdate = "update donhang set ngayhuydon = SYSDATE where MADONHANG = '" + ma + "'";
             OracleCommand cmd = new OracleCommand(sqlUpdate, connection);
             //cmd.Parameters.Add(":ma",OracleDbType.Varchar2).Value=ma;
             cmd.ExecuteNonQuery();
-            if(cmd.ExecuteNonQuery() > 0)
+            if (cmd.ExecuteNonQuery() > 0)
             {
                 MessageBox.Show(this, "Đã hủy đơn");
                 //int rowIndex = dtViewDonHang.Rows.IndexOf(dtViewDonHang.Select("madonhang = " + ma)[0]);
@@ -230,10 +312,14 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show(this, "Hủy đơn thất bại");
             }
             connection.Close();
+        }
+
+        private void btnSua_Click_1(object sender, EventArgs e)
+        {
 
         }
 
-        private void btnCapNhat_Click(object sender, EventArgs e)
+        private void btnCapNhat_Click_1(object sender, EventArgs e)
         {
             if (xldl.CAPNHAT("select * from donhang", dtDonHang) > 0)
             {
@@ -242,9 +328,26 @@ namespace DoAnMonHoc.GUI
             }
             else
                 MessageBox.Show("Cap nhat that bai");
+
+            //them doanh so kh
+            //if (connection.State == ConnectionState.Closed)
+            //{
+            //    connection.Open(); 
+
+            //}
+            //string updateDoanhSoKH = "update khachhang set doanhso = doanhso"+ int.Parse(txtGiaDonHang.Text) + "where makh= '" + cbxTenKH.SelectedValue.ToString() +"' ;";
+            //OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
+            ////command.Parameters.Add(":ds", OracleDbType.Int16).Value = txtGiaDonHang.Text;
+            ////command.Parameters.Add(":makh", OracleDbType.Varchar2).Value = cbxTenKH.SelectedValue;
+            //command.ExecuteNonQuery();
+            //if (command.ExecuteNonQuery() > 0)
+            //    connection.Close();
+
+
+            
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+        private void btnThoat_Click_1(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -253,49 +356,14 @@ namespace DoAnMonHoc.GUI
             }
         }
 
-        private void cbxTenKH_SelectedIndexChanged(object sender, EventArgs e)
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (cbxTenKH.SelectedValue != null && cbxTenKH.SelectedValue != DBNull.Value)
-            {
-                if (connection.State == ConnectionState.Closed)
-                {
-                    connection.Open();
-                }
-
-                string masokh = cbxTenKH.SelectedValue.ToString();
-
-
-                string ketnoikh = "SELECT sdt FROM khachhang WHERE makh = '" + masokh + "'";
-                OracleCommand cmd = new OracleCommand(ketnoikh, connection);
-                OracleDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    txtSDTNguoiGui.Text = reader.GetString(0).ToString();
-                    reader.Close();
-                    connection.Close();
-
-                }
-
-                else
-                {
-
-                }
-
-
-
-            }
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+            btnHuyDH.Enabled = true;
         }
 
-        private void dtpNgayDatHang_Leave(object sender, EventArgs e)
-        {
-            if (dtpNgayDatHang.Value > DateTime.Now)
-            {
-                MessageBox.Show(this, "Không được lớn hơn ngày hiện tại");
-                dtpNgayDatHang.Value = DateTime.Now;
-            }
-        }
-
-        private void txtTrongLuong_Leave(object sender, EventArgs e)
+        private void txtTrongLuong_Leave_1(object sender, EventArgs e)
         {
             if (!int.TryParse(txtTrongLuong.Text, out _))
             {
@@ -347,7 +415,54 @@ namespace DoAnMonHoc.GUI
             }
         }
 
-        private void txtTenNguoiNhan_Leave(object sender, EventArgs e)
+        private void cbxTenKH_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cbxTenKH.SelectedValue != null && cbxTenKH.SelectedValue != DBNull.Value)
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+                }
+
+                string masokh = cbxTenKH.SelectedValue.ToString();
+
+
+                string ketnoikh = "SELECT sdt FROM khachhang WHERE makh = '" + masokh + "'";
+                OracleCommand cmd = new OracleCommand(ketnoikh, connection);
+                OracleDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    txtSDTNguoiGui.Text = reader.GetString(0).ToString();
+                    reader.Close();
+                    connection.Close();
+
+                }
+
+                else
+                {
+
+                }
+
+
+
+            }
+        }
+
+        private void dtpNgayDatHang_Leave_1(object sender, EventArgs e)
+        {
+            if (dtpNgayDatHang.Value > DateTime.Now)
+            {
+                MessageBox.Show(this, "Không được lớn hơn ngày hiện tại");
+                dtpNgayDatHang.Value = DateTime.Now;
+            }
+        }
+
+        private void cbxTenKH_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenNguoiNhan_Leave_1(object sender, EventArgs e)
         {
             // Kiểm tra nếu textbox1 không rỗng
             if (!string.IsNullOrEmpty(txtTenNguoiNhan.Text))
@@ -362,17 +477,9 @@ namespace DoAnMonHoc.GUI
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
-            btnHuyDH.Enabled = true;
             
-        }
-
-        private void btnRefesh_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Refresh();
         }
 
         private void FormDonHang_Load(object sender, EventArgs e)

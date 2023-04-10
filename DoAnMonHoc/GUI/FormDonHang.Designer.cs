@@ -65,6 +65,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaDH = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +94,7 @@
             this.btnRefesh.Text = "REFESH";
             this.btnRefesh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRefesh.UseVisualStyleBackColor = true;
+            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click_1);
             // 
             // imageList1
             // 
@@ -121,6 +123,7 @@
             this.button1.Text = "Thêm";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // cbxTenNV
             // 
@@ -137,6 +140,8 @@
             this.cbxTenKH.Name = "cbxTenKH";
             this.cbxTenKH.Size = new System.Drawing.Size(210, 24);
             this.cbxTenKH.TabIndex = 194;
+            this.cbxTenKH.SelectedIndexChanged += new System.EventHandler(this.cbxTenKH_SelectedIndexChanged_1);
+            this.cbxTenKH.Leave += new System.EventHandler(this.cbxTenKH_Leave);
             // 
             // cbxTenDV
             // 
@@ -156,6 +161,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1487, 260);
             this.dataGridView1.TabIndex = 192;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // cbxTrangThai
             // 
@@ -173,6 +179,7 @@
             this.dtpNgayDatHang.Name = "dtpNgayDatHang";
             this.dtpNgayDatHang.Size = new System.Drawing.Size(195, 22);
             this.dtpNgayDatHang.TabIndex = 190;
+            this.dtpNgayDatHang.Leave += new System.EventHandler(this.dtpNgayDatHang_Leave_1);
             // 
             // btnHuyDH
             // 
@@ -187,6 +194,7 @@
             this.btnHuyDH.Text = "Hủy ĐH";
             this.btnHuyDH.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHuyDH.UseVisualStyleBackColor = false;
+            this.btnHuyDH.Click += new System.EventHandler(this.btnHuyDH_Click_1);
             // 
             // btnThoat
             // 
@@ -201,6 +209,7 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // btnCapNhat
             // 
@@ -215,6 +224,7 @@
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click_1);
             // 
             // btnSua
             // 
@@ -229,6 +239,7 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
             // 
             // btnXoa
             // 
@@ -243,6 +254,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnThem
             // 
@@ -257,6 +269,7 @@
             this.btnThem.Text = "Thêm ĐH";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click_1);
             // 
             // txtSDTNguoiGui
             // 
@@ -280,6 +293,7 @@
             this.txtTrongLuong.Name = "txtTrongLuong";
             this.txtTrongLuong.Size = new System.Drawing.Size(195, 22);
             this.txtTrongLuong.TabIndex = 181;
+            this.txtTrongLuong.Leave += new System.EventHandler(this.txtTrongLuong_Leave_1);
             // 
             // txtSDTNguoiNhan
             // 
@@ -301,6 +315,7 @@
             this.txtTenNguoiNhan.Name = "txtTenNguoiNhan";
             this.txtTenNguoiNhan.Size = new System.Drawing.Size(210, 22);
             this.txtTenNguoiNhan.TabIndex = 177;
+            this.txtTenNguoiNhan.Leave += new System.EventHandler(this.txtTenNguoiNhan_Leave_1);
             // 
             // label11
             // 
@@ -441,12 +456,23 @@
             this.txtMaDH.Size = new System.Drawing.Size(210, 22);
             this.txtMaDH.TabIndex = 179;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1156, 83);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 74);
+            this.button2.TabIndex = 199;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1660, 747);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnRefesh);
             this.Controls.Add(this.button1);
@@ -528,5 +554,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaDH;
+        private System.Windows.Forms.Button button2;
     }
 }
