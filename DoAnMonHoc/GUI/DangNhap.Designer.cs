@@ -44,7 +44,7 @@ namespace DoAnMonHoc.GUI
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(294, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 39);
+            this.label1.Size = new System.Drawing.Size(191, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng Nhập";
             // 
@@ -80,15 +80,17 @@ namespace DoAnMonHoc.GUI
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(208, 138);
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(229, 205);
             this.txtUserName.Multiline = true;
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(353, 35);
+            this.txtUserName.Size = new System.Drawing.Size(353, 34);
             this.txtUserName.TabIndex = 5;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(208, 206);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(229, 143);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(353, 35);

@@ -18,7 +18,7 @@ namespace DoAnMonHoc
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new GUI.frmHuongDanKetNoiDB());
 
-            Application.Run(new GUI.menu());
+            Application.Run(new GUI.DangNhap());
         }
     }
 }
