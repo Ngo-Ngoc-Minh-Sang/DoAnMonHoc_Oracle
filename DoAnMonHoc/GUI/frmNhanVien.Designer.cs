@@ -1,7 +1,7 @@
 ﻿
 namespace DoAnMonHoc.GUI
 {
-    partial class frmHuongDanKetNoiDB
+    partial class frmNhanVien
     {
         /// <summary>
         /// Required designer variable.

@@ -100,17 +100,23 @@
     <Compile Include="GUI\DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\TestProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TestProcedure.Designer.cs">
+      <DependentUpon>TestProcedure.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormDonHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\FormDonHang.Designer.cs">
       <DependentUpon>FormDonHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmHuongDanKetNoiDB.cs">
+    <Compile Include="GUI\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmHuongDanKetNoiDB.Designer.cs">
-      <DependentUpon>frmHuongDanKetNoiDB.cs</DependentUpon>
+    <Compile Include="GUI\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -133,11 +139,14 @@
     <EmbeddedResource Include="GUI\DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TestProcedure.resx">
+      <DependentUpon>TestProcedure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormDonHang.resx">
       <DependentUpon>FormDonHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmHuongDanKetNoiDB.resx">
-      <DependentUpon>frmHuongDanKetNoiDB.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
@@ -174,10 +183,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BBL\" />
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

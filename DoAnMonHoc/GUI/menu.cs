@@ -121,7 +121,7 @@ namespace DoAnMonHoc.GUI
         {
             if (!KIEMTRATONTAIFROM("frmHuongDanKetNoiDB"))
             {
-                frmHuongDanKetNoiDB frm = new frmHuongDanKetNoiDB();
+                frmNhanVien frm = new frmNhanVien();
                 frm.MdiParent = this;
                 frm.Show();
             }
