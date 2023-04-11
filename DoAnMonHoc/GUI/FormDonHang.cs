@@ -1,5 +1,6 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DoAnMonHoc.GUI
 {
@@ -130,10 +132,26 @@ namespace DoAnMonHoc.GUI
             
         }
 
+        List<int> listdoanhso = new List<int>();
+        List<string> listmakh = new List<string>();
         private void btnThem_Click_1(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtMaDH.Text))
             {
+                if (cbxTenKH.SelectedIndex != -1)
+                {
+                    if (int.TryParse(txtGiaDonHang.Text, out int value1))
+                    {
+                        listdoanhso.Add(value1);
+                    }
+
+                    if (!string.IsNullOrEmpty(cbxTenKH.SelectedValue.ToString()))
+                    {
+                        listmakh.Add(cbxTenKH.SelectedValue.ToString());
+                    }
+
+                }
+
                 string input = txtMaDH.Text.Trim();
                 bool isDuplicate = false;
                 foreach (DataRow row in dtViewDonHang.Rows)
@@ -213,16 +231,16 @@ namespace DoAnMonHoc.GUI
 
 
                     //THEM DOANH SO KH
-                    if (connection.State == ConnectionState.Closed)
-                        connection.Open();
+                    //if (connection.State == ConnectionState.Closed)
+                    //    connection.Open();
 
-                    string sql = "update khachhang set doanhso = doanhso + :ds where makh = :makh";
-                    OracleCommand cmd = new OracleCommand(sql, connection);
-                    cmd.Parameters.Add(new OracleParameter(":ds", txtGiaDonHang.Text));
-                    cmd.Parameters.Add(new OracleParameter(":makh", cbxTenKH.SelectedValue.ToString()));
-                    cmd.ExecuteNonQuery();
-                    if (cmd.ExecuteNonQuery() > 0)
-                        connection.Close();
+                    //string sql = "update khachhang set doanhso = doanhso + :ds where makh = :makh";
+                    //OracleCommand cmd = new OracleCommand(sql, connection);
+                    //cmd.Parameters.Add(new OracleParameter(":ds", txtGiaDonHang.Text));
+                    //cmd.Parameters.Add(new OracleParameter(":makh", cbxTenKH.SelectedValue.ToString()));
+                    //cmd.ExecuteNonQuery();
+                    //if (cmd.ExecuteNonQuery() > 0)
+                    //    connection.Close();
 
 
 
@@ -332,11 +350,11 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show("Cap nhat that bai");
 
             //them doanh so kh
-            //if (connection.State == ConnectionState.Closed)
-            //{
-            //    connection.Open(); 
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
 
-            //}
+            }
             //string updateDoanhSoKH = "update khachhang set doanhso = doanhso"+ int.Parse(txtGiaDonHang.Text) + "where makh= '" + cbxTenKH.SelectedValue.ToString() +"' ;";
             //OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
             ////command.Parameters.Add(":ds", OracleDbType.Int16).Value = txtGiaDonHang.Text;
@@ -346,7 +364,30 @@ namespace DoAnMonHoc.GUI
             //    connection.Close();
 
 
-            
+            //for (int i = 0; i < listdoanhso.Count; i++)
+            //{
+            //    string updateDoanhSoKH = "update khachhang set doanhso = doanhso" + listdoanhso[i] + "where makh= '" + listmakh[i] + "' ;";
+            //    OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
+            //    command.ExecuteNonQuery();
+
+            //}
+            //connection.Close() ;
+
+
+                for (int i = 0; i < listdoanhso.Count; i++)
+                {
+                    string updateDoanhSoKH = "UPDATE khachhang SET doanhso = doanhso + :value WHERE makh = :makh";
+                    OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
+                    command.Parameters.Add(":value", OracleDbType.Int32).Value = listdoanhso[i];
+                    command.Parameters.Add(":makh", OracleDbType.Varchar2).Value = listmakh[i];
+                    command.ExecuteNonQuery();
+                }
+
+            connection.Close() ;
+
+
+
+
         }
 
         private void btnThoat_Click_1(object sender, EventArgs e)
@@ -487,6 +528,28 @@ namespace DoAnMonHoc.GUI
         private void button2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+
+
+            
+
+
+
+
+
+
+        }
+
+        private void FormDonHang_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void FormDonHang_Load(object sender, EventArgs e)
