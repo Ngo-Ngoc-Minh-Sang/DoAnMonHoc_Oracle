@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DoAnMonHoc.GUI
 {
-    public partial class frmHuongDanKetNoiDB : Form
+    public partial class frmNhanVien : Form
     {
         DAL.DataHelper helper = new DAL.DataHelper();
-        public frmHuongDanKetNoiDB()
+        public frmNhanVien()
         {
             InitializeComponent();
         }
