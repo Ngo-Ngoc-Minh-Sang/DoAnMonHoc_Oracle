@@ -76,7 +76,6 @@
             this.btnRefesh = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -545,7 +544,6 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button2);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.txtMaDH);
             this.panel6.Controls.Add(this.label2);
@@ -594,17 +592,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 3);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1848, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(1848, 323);
             this.dataGridView1.TabIndex = 192;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             // 
             // btnRefesh
             // 
+            this.btnRefesh.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnRefesh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRefesh.ImageKey = "Reload-Icon-SVG-03kmldg.png";
             this.btnRefesh.ImageList = this.imageList1;
@@ -614,13 +613,12 @@
             this.btnRefesh.TabIndex = 197;
             this.btnRefesh.Text = "REFESH";
             this.btnRefesh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRefesh.UseVisualStyleBackColor = true;
+            this.btnRefesh.UseVisualStyleBackColor = false;
             this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click_1);
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.dataGridView1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 309);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1420, 329);
@@ -636,16 +634,6 @@
             this.panel8.Size = new System.Drawing.Size(1420, 100);
             this.panel8.TabIndex = 202;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1080, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 196;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_2);
-            // 
             // FormDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -660,6 +648,7 @@
             this.Text = "FormDonHang";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDonHang_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDonHang_FormClosed);
             this.Load += new System.EventHandler(this.FormDonHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -724,6 +713,5 @@
         private System.Windows.Forms.Button btnRefesh;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button2;
     }
 }

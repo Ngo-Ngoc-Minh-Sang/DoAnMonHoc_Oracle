@@ -545,6 +545,11 @@ namespace DoAnMonHoc.GUI
 
         private void FormDonHang_FormClosing(object sender, FormClosingEventArgs e)
         {
+            
+        }
+
+        private void FormDonHang_FormClosed(object sender, FormClosedEventArgs e)
+        {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
