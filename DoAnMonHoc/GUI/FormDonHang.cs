@@ -126,6 +126,8 @@ namespace DoAnMonHoc.GUI
             txtTrongLuong.Text = string.Empty;
             txtSDTNguoiGui.Text = string.Empty;
             txtGiaDonHang.Text = string.Empty;
+
+            
         }
 
         private void btnThem_Click_1(object sender, EventArgs e)
@@ -480,6 +482,11 @@ namespace DoAnMonHoc.GUI
         private void button2_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         private void FormDonHang_Load(object sender, EventArgs e)
