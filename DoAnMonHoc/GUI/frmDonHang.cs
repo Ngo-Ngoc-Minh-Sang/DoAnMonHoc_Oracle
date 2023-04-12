@@ -304,11 +304,7 @@ namespace DoAnMonHoc.GUI
             listtrumakh.Add(cbxTenKH.SelectedValue.ToString());
             listmadonhang.Add(txtMaDH.Text.ToString());
             btnCapNhat.Enabled=true;
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-
-            }
+            
             foreach (DataRow row in dtViewDonHang.Rows)
             {
                 if (row["madonhang"].ToString().Equals(txtMaDH.Text))
@@ -318,32 +314,8 @@ namespace DoAnMonHoc.GUI
                     MessageBox.Show("Đã hủy đơn hàng " + txtMaDH.Text.Trim());
                 }
             }
-            //string trangthai = cbxTrangThai.Items[3].ToString();
-            //string ma = txtMaDH.Text.Trim();
-            //string sqlUpdate = "update donhang set ngayhuydon = SYSDATE where MADONHANG = '" + ma + "'";
-            //OracleCommand cmd = new OracleCommand(sqlUpdate, connection);
-            ////cmd.Parameters.Add(":ma",OracleDbType.Varchar2).Value=ma;
-            //cmd.ExecuteNonQuery();
-            //if (cmd.ExecuteNonQuery() > 0)
-            //{
-            //    MessageBox.Show(this, "Đã hủy đơn");
-
-
-            //    foreach (DataRow row in dtViewDonHang.Rows)
-            //    {
-            //        if (row["madonhang"].ToString().Equals(ma))
-            //        {
-            //            row["ngayhuydon"] = DateTime.Now;
-            //        }
-            //    }
-            //    dataGridView1.Refresh();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show(this, "Hủy đơn thất bại");
-            //}
-            connection.Close();
+            
+            
         }
 
         private void btnSua_Click_1(object sender, EventArgs e)
@@ -377,6 +349,8 @@ namespace DoAnMonHoc.GUI
                     command.ExecuteNonQuery();
                 }
                 MessageBox.Show("Thành công");
+                listdoanhso.Clear();
+                listmakh.Clear();
                 connection.Close();
             }
 
@@ -396,6 +370,8 @@ namespace DoAnMonHoc.GUI
                     command.ExecuteNonQuery();
                 }
                 MessageBox.Show("Thành công");
+                listtrudoanhso.Clear();
+                listtrudoanhso.Clear();
                 connection.Close();
             }
             if (listmadonhang.Count > 0)
@@ -412,6 +388,43 @@ namespace DoAnMonHoc.GUI
                     command.ExecuteNonQuery();
                 }
                 MessageBox.Show("Thành Công");
+                listmadonhang.Clear();
+                connection.Close();
+            }
+            if(listmadonhang_DangGiao.Count > 0)
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+
+                }
+                for (int i = 0; i < listmadonhang.Count; i++)
+                {
+                    OracleCommand command = new OracleCommand("BEGIN trangThaiDangGiao(:madh); END;", connection);
+                    command.Parameters.Add(":madh", OracleDbType.Char).Value = listmadonhang_DangGiao[i];
+                    command.ExecuteNonQuery();
+
+                }
+                MessageBox.Show("Thành Công");
+                listmadonhang_DangGiao.Clear();
+                connection.Close();
+            }
+            if (listDonHang_DaGiao.Count > 0)
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
+
+                }
+                for (int i = 0; i < listmadonhang.Count; i++)
+                {
+                    OracleCommand command = new OracleCommand("BEGIN trangThaiDaGiao(':madh');END;", connection);
+                    command.Parameters.Add(":madh", OracleDbType.Char).Value = listDonHang_DaGiao[i];
+                    command.ExecuteNonQuery();
+
+                }
+                MessageBox.Show("Thành Công");
+                listmadonhang_DangGiao.Clear();
                 connection.Close();
             }
 
@@ -552,9 +565,25 @@ namespace DoAnMonHoc.GUI
         {
 
         }
+        List<string> listmadonhang_DangGiao = new List<string>();
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            string madonhang = txtMaDH.Text.Trim();
+            listmadonhang_DangGiao.Add(madonhang);
+            foreach (DataRow row in dtViewDonHang.Rows)
+            {
+                if (row["madonhang"].ToString().Equals(txtMaDH.Text))
+                {
+                    row["trangthai"] = cbxTrangThai.Items[1].ToString();
+                    MessageBox.Show("Đơn hàng " + madonhang + "đang giao");
+                }
+            }
+            btnCapNhat.Enabled = true;
+
+
+            
+            
 
         }
 
@@ -573,16 +602,42 @@ namespace DoAnMonHoc.GUI
 
         private void FormDonHang_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Hủy sự kiện đóng form
+            }
         }
 
         private void FormDonHang_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            //DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (result == DialogResult.Yes)
+            //{
+            //    Application.Exit();
+            //}
+            
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        List<string> listDonHang_DaGiao = new List<string>();
+
+        private void btnDaGiao_Click(object sender, EventArgs e)
+        {
+            string madonhang = txtMaDH.Text.Trim();
+            listDonHang_DaGiao.Add(madonhang);
+            foreach (DataRow row in dtViewDonHang.Rows)
             {
-                Application.Exit();
+                if (row["madonhang"].ToString().Equals(txtMaDH.Text))
+                {
+                    row["trangthai"] = cbxTrangThai.Items[2].ToString();
+                    MessageBox.Show("Đơn hàng " + madonhang + " đã giao");
+                }
             }
+            btnCapNhat.Enabled = true;
         }
 
         private void FormDonHang_Load(object sender, EventArgs e)
