@@ -59,12 +59,13 @@ namespace DoAnMonHoc.GUI
                     string cccd = row["CCCD"].ToString();
                     string sdt = row["SDT"].ToString();
                     string diachi = row["DIACHI"].ToString();
-                    textMaNV.Text = manv;
+
                     textTenNV.Text = tennv;
                     textGmail.Text = gmail;
                     textCCCD.Text = cccd;
                     textSDT.Text = sdt;
                     textDC.Text = diachi;
+                    textMaNV.Text = manv;
                 }
                 else
                 {
