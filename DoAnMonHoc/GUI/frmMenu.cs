@@ -42,7 +42,8 @@ namespace DoAnMonHoc.GUI
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            frmChucVu cv = new frmChucVu();
+            cv.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
