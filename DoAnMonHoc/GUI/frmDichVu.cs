@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace DoAnMonHoc.GUI
 {
-    public partial class DichVu : Form
+    public partial class frmDichVu : Form
     {
         DAL.DataHelper helper = new DAL.DataHelper();
-        public DichVu()
+        public frmDichVu()
         {
             InitializeComponent();
         }

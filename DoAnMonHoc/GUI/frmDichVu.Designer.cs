@@ -1,6 +1,6 @@
 ﻿namespace DoAnMonHoc.GUI
 {
-    partial class DichVu
+    partial class frmDichVu
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(296, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(373, 39);
@@ -57,6 +58,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(195, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 25);
@@ -67,6 +69,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(195, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 25);
@@ -77,7 +80,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(195, 229);
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(195, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 25);
             this.label4.TabIndex = 3;
@@ -102,57 +106,67 @@
             // textGia
             // 
             this.textGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textGia.Location = new System.Drawing.Point(390, 226);
+            this.textGia.Location = new System.Drawing.Point(390, 220);
             this.textGia.Name = "textGia";
             this.textGia.Size = new System.Drawing.Size(317, 32);
             this.textGia.TabIndex = 6;
             // 
             // btnThem
             // 
+            this.btnThem.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.Red;
             this.btnThem.Location = new System.Drawing.Point(46, 291);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(111, 47);
+            this.btnThem.Size = new System.Drawing.Size(111, 52);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Red;
             this.btnXoa.Location = new System.Drawing.Point(270, 291);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(111, 47);
+            this.btnXoa.Size = new System.Drawing.Size(111, 52);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // Sửa
             // 
+            this.Sửa.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Sửa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sửa.ForeColor = System.Drawing.Color.Red;
             this.Sửa.Location = new System.Drawing.Point(548, 291);
             this.Sửa.Name = "Sửa";
-            this.Sửa.Size = new System.Drawing.Size(111, 47);
+            this.Sửa.Size = new System.Drawing.Size(111, 52);
             this.Sửa.TabIndex = 10;
             this.Sửa.Text = "Sửa";
-            this.Sửa.UseVisualStyleBackColor = true;
+            this.Sửa.UseVisualStyleBackColor = false;
             this.Sửa.Click += new System.EventHandler(this.Sửa_Click);
             // 
             // btnThoat
             // 
+            this.btnThoat.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.Red;
             this.btnThoat.Location = new System.Drawing.Point(797, 291);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(111, 47);
+            this.btnThoat.Size = new System.Drawing.Size(111, 52);
             this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // dataGridView_DV
             // 
+            this.dataGridView_DV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_DV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView_DV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_DV.Location = new System.Drawing.Point(46, 363);
             this.dataGridView_DV.Name = "dataGridView_DV";
@@ -162,10 +176,11 @@
             this.dataGridView_DV.TabIndex = 12;
             this.dataGridView_DV.SelectionChanged += new System.EventHandler(this.dataGridView_DV_SelectionChanged);
             // 
-            // DichVu
+            // frmDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(951, 606);
             this.Controls.Add(this.dataGridView_DV);
             this.Controls.Add(this.btnThoat);
@@ -179,7 +194,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "DichVu";
+            this.Name = "frmDichVu";
             this.Text = "DichVu";
             this.Load += new System.EventHandler(this.DichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DV)).EndInit();

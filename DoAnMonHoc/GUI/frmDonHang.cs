@@ -14,14 +14,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DoAnMonHoc.GUI
 {
-    public partial class FormDonHang : Form
+    public partial class frmDonHang : Form
     {
         DAL.XuLyDuLieu xldl = new DAL.XuLyDuLieu();
         DataTable dtViewDonHang, dtNV, dtKH, dtDV, dtDonHang;
         DataColumn[] key = new DataColumn[1];
 
         OracleConnection connection = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=host.docker.internal)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SID=xe)));User Id=C##hdaz;Password=123;");
-        public FormDonHang()
+        public frmDonHang()
         {
             InitializeComponent();
         }

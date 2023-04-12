@@ -54,7 +54,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(314, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(448, 38);
@@ -64,7 +66,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(127, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(160, 25);
@@ -74,7 +78,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(127, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 25);
@@ -84,7 +90,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(127, 306);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 25);
@@ -94,7 +102,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(127, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(139, 25);
@@ -104,7 +114,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(127, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 25);
@@ -172,46 +184,54 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.Color.Red;
             this.btnCapNhat.Location = new System.Drawing.Point(428, 431);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(128, 56);
             this.btnCapNhat.TabIndex = 15;
             this.btnCapNhat.Text = "Sửa";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.Red;
             this.btnThem.Location = new System.Drawing.Point(14, 431);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(128, 56);
             this.btnThem.TabIndex = 14;
             this.btnThem.Text = "Thêm ";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.Red;
             this.btnXoa.Location = new System.Drawing.Point(211, 431);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(128, 56);
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
             this.button1.Location = new System.Drawing.Point(855, 431);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 56);
             this.button1.TabIndex = 16;
             this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_search
@@ -226,30 +246,36 @@
             // 
             // search
             // 
-            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.ForeColor = System.Drawing.Color.Red;
             this.search.Location = new System.Drawing.Point(794, 206);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(119, 50);
             this.search.TabIndex = 18;
             this.search.Text = "Tìm Kiếm";
-            this.search.UseVisualStyleBackColor = true;
+            this.search.UseVisualStyleBackColor = false;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // loadDgv
             // 
-            this.loadDgv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadDgv.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.loadDgv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadDgv.ForeColor = System.Drawing.Color.Red;
             this.loadDgv.Location = new System.Drawing.Point(648, 431);
             this.loadDgv.Name = "loadDgv";
             this.loadDgv.Size = new System.Drawing.Size(128, 56);
             this.loadDgv.TabIndex = 19;
             this.loadDgv.Text = "Load";
-            this.loadDgv.UseVisualStyleBackColor = true;
+            this.loadDgv.UseVisualStyleBackColor = false;
             this.loadDgv.Click += new System.EventHandler(this.loadDgv_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(745, 113);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(197, 25);
@@ -260,6 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(995, 745);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.loadDgv);

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DoAnMonHoc.GUI
 {
-    public partial class DangNhap : Form
+    public partial class frmDangNhap : Form
     {
         DAL.DataHelper helper = new DAL.DataHelper();
-        public DangNhap()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
@@ -28,8 +28,9 @@ namespace DoAnMonHoc.GUI
 
             else
             {
-                menu menu = new menu();
+                frmMenu menu = new frmMenu();
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
+                this.Visible = false;
                 menu.ShowDialog();
             }
                 
