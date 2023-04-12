@@ -1,6 +1,6 @@
 ﻿namespace DoAnMonHoc.GUI
 {
-    partial class frmNhanVien
+    partial class frmNVDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,6 @@
             this.textSDT = new System.Windows.Forms.TextBox();
             this.textDC = new System.Windows.Forms.TextBox();
             this.textMK = new System.Windows.Forms.TextBox();
-            this.btnXacNhan = new System.Windows.Forms.Button();
             this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -69,7 +68,6 @@
             this.label2.Size = new System.Drawing.Size(154, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã nhân viên";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -205,44 +203,35 @@
             this.textMK.Size = new System.Drawing.Size(217, 32);
             this.textMK.TabIndex = 17;
             // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXacNhan.Location = new System.Drawing.Point(123, 453);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(142, 66);
-            this.btnXacNhan.TabIndex = 18;
-            this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.UseVisualStyleBackColor = true;
-            // 
             // btnDoiMK
             // 
             this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMK.Location = new System.Drawing.Point(401, 453);
+            this.btnDoiMK.Location = new System.Drawing.Point(247, 427);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.Size = new System.Drawing.Size(120, 66);
             this.btnDoiMK.TabIndex = 19;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(660, 453);
+            this.btnThoat.Location = new System.Drawing.Point(505, 427);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 66);
             this.btnThoat.TabIndex = 20;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // frmNhanVien
+            // frmNVDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 608);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDoiMK);
-            this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.textMK);
             this.Controls.Add(this.textDC);
             this.Controls.Add(this.textSDT);
@@ -260,7 +249,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmNhanVien";
+            this.Name = "frmNVDangNhap";
             this.Text = "frmNhanVien";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -285,7 +274,6 @@
         private System.Windows.Forms.TextBox textSDT;
         private System.Windows.Forms.TextBox textDC;
         private System.Windows.Forms.TextBox textMK;
-        private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.Button btnDoiMK;
         private System.Windows.Forms.Button btnThoat;
     }

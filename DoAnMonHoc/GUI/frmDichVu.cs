@@ -127,5 +127,20 @@ namespace DoAnMonHoc.GUI
                 this.Close();
             }
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            // Lấy từ khóa tìm kiếm từ TextBox
+            string keyword = textTimKiem.Text;
+
+            // Tạo câu truy vấn SELECT
+            string query = "SELECT * FROM DICHVU WHERE MADV LIKE '%" + keyword + "%' OR TENDV LIKE '%" + keyword + "%'";
+
+            // Thực hiện câu truy vấn và lấy kết quả vào DataTable
+            DataTable dt = helper.ExecuteQuery(query);
+
+            // Load kết quả lên DataGridView
+            dataGridView_DV.DataSource = dt;
+        }
     }
 }
