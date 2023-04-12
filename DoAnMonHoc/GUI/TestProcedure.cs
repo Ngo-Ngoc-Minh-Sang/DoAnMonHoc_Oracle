@@ -34,5 +34,24 @@ namespace DoAnMonHoc.GUI
             label1.Text = result;
             con.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string strCon = @"DATA SOURCE = DELL:1521/ORCL.LOCALDOMAIN; USER ID=MINHSANG;PASSWORD=21062002";
+            OracleConnection con = new OracleConnection(strCon);
+            string queryString = "get_employees";
+            DataTable dataTable = new DataTable();
+            OracleCommand command = new OracleCommand(queryString, con);
+            command.CommandType = CommandType.StoredProcedure;
+            OracleParameter outCursorParam = new OracleParameter("out_cursor", OracleDbType.RefCursor);
+            outCursorParam.Direction = ParameterDirection.Output;
+            command.Parameters.Add(outCursorParam);
+
+            OracleDataAdapter adapter = new OracleDataAdapter(command);
+            con.Open();
+            adapter.Fill(dataTable);
+            con.Close();
+            dataGridView1.DataSource = dataTable;
+        }
     }
 }

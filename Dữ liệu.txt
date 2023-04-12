@@ -116,3 +116,24 @@ INSERT INTO DONHANG (MADONHANG, MADV, MAKH, MANV, NGAYDATHANG, DIACHI, SDT, TRAN
 VALUES ('DH007', 'DV002', 'KH005', 'NV008', TO_DATE('15/4/2023','dd/MM/yyyy'), N'1325 Bình Hưng Hòa, Quận 7, TP HCM', '0258632142', N'Ðang giao', 222000, 5.1);
 INSERT INTO DONHANG (MADONHANG, MADV, MAKH, MANV, NGAYDATHANG, DIACHI, SDT, TRANGTHAI, GIA_DONHANG, TRONGLUONG)
 VALUES ('DH008', 'DV003', 'KH003', 'NV006', TO_DATE('5/8/2023','dd/MM/yyyy'), N'22 Lê Lợi, Quận 5, TP HCM', '0358962155', N'Ðã giao', 900000, 4.9);
+
+
+CREATE OR REPLACE PROCEDURE get_employee_salary (
+    p_employee_id IN NUMBER,
+    p_salary OUT NUMBER
+)
+IS
+BEGIN
+    SELECT salary INTO p_salary FROM employees WHERE employee_id = p_employee_id;
+END;
+
+-- GỌI PROCEDURE
+DECLARE
+  p_salary number;
+BEGIN
+  get_employee_salary(1, p_salary);
+  DBMS_OUTPUT.PUT_LINE(p_salary);
+END;
+
+--Bật màn hình để hiện kết quả khi chạy procedure
+SET SERVEROUTPUT ON;
