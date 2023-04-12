@@ -42,11 +42,11 @@ namespace DoAnMonHoc.GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 9);
+            this.label1.Location = new System.Drawing.Point(294, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 38);
+            this.label1.Size = new System.Drawing.Size(223, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Đăng Nhập";
+            this.label1.Text = "ĐĂNG NHẬP";
             // 
             // label2
             // 
@@ -70,9 +70,10 @@ namespace DoAnMonHoc.GUI
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(208, 327);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(116, 54);
+            this.btnLogin.Size = new System.Drawing.Size(144, 54);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -98,9 +99,10 @@ namespace DoAnMonHoc.GUI
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(445, 327);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(116, 54);
+            this.btnExit.Size = new System.Drawing.Size(144, 54);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;

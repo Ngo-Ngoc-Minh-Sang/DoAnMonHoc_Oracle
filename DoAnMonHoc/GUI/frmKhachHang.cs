@@ -168,14 +168,13 @@ namespace DoAnMonHoc.GUI
 
         private void search_Click(object sender, EventArgs e)
         {
+            dtgKhachhang.ClearSelection(); //Xóa ô màu trước khi thực hiện tìm kiếm
             string txtSearch = txt_search.Text.ToLower().Trim();
-
             if (string.IsNullOrEmpty(txtSearch))
             {
                 MessageBox.Show("Vui lòng nhập giá trị tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             try
             {
                 foreach (DataGridViewRow row in dtgKhachhang.Rows)
