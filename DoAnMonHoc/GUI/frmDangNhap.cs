@@ -17,7 +17,10 @@ namespace DoAnMonHoc.GUI
         {
             InitializeComponent();
         }
-
+        public string GetTenDangNhap()
+        {
+            return txtUserName.Text;
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string userName = txtUserName.Text;

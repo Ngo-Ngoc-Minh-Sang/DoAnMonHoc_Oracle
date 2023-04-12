@@ -45,6 +45,9 @@
             this.textDC = new System.Windows.Forms.TextBox();
             this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textTenDN = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -153,7 +156,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(242, 301);
+            this.label8.Location = new System.Drawing.Point(34, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 26);
             this.label8.TabIndex = 12;
@@ -178,7 +181,7 @@
             // textDC
             // 
             this.textDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDC.Location = new System.Drawing.Point(386, 298);
+            this.textDC.Location = new System.Drawing.Point(206, 292);
             this.textDC.Name = "textDC";
             this.textDC.Size = new System.Drawing.Size(217, 32);
             this.textDC.TabIndex = 16;
@@ -186,7 +189,7 @@
             // btnDoiMK
             // 
             this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMK.Location = new System.Drawing.Point(247, 427);
+            this.btnDoiMK.Location = new System.Drawing.Point(336, 427);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.Size = new System.Drawing.Size(190, 66);
             this.btnDoiMK.TabIndex = 19;
@@ -197,7 +200,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(505, 427);
+            this.btnThoat.Location = new System.Drawing.Point(607, 427);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 66);
             this.btnThoat.TabIndex = 20;
@@ -205,11 +208,43 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Location = new System.Drawing.Point(139, 427);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(120, 66);
+            this.btnLoad.TabIndex = 21;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(516, 298);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(169, 26);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Tên đăng nhập";
+            // 
+            // textTenDN
+            // 
+            this.textTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTenDN.Location = new System.Drawing.Point(705, 292);
+            this.textTenDN.Name = "textTenDN";
+            this.textTenDN.Size = new System.Drawing.Size(217, 32);
+            this.textTenDN.TabIndex = 23;
+            // 
             // frmNVDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 608);
+            this.Controls.Add(this.textTenDN);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.textDC);
@@ -229,6 +264,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmNVDangNhap";
             this.Text = "frmNhanVien";
+            this.Load += new System.EventHandler(this.frmNVDangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +288,8 @@
         private System.Windows.Forms.TextBox textDC;
         private System.Windows.Forms.Button btnDoiMK;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textTenDN;
     }
 }

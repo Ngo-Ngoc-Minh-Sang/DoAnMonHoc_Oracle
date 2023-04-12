@@ -23,6 +23,7 @@ namespace DoAnMonHoc.DAL
             con = new OracleConnection(strCon);
         }
 
+
         public DataTable ExecuteQuery(string query)
         {
             DataTable table = new DataTable();
