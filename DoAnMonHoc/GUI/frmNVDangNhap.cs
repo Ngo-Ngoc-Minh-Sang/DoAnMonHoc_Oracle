@@ -15,7 +15,6 @@ namespace DoAnMonHoc.GUI
     public partial class frmNVDangNhap: Form
     {
         DAL.DataHelper helper = new DAL.DataHelper();
-        
         public frmNVDangNhap()
         {
             InitializeComponent();
@@ -76,10 +75,8 @@ namespace DoAnMonHoc.GUI
             {
                 MessageBox.Show("Lỗi khi truy vấn CSDL: " + ex.Message);
             }
-            
         }
         
-
         private void frmNVDangNhap_Load(object sender, EventArgs e)
         {
             textMaNV.Enabled = false;

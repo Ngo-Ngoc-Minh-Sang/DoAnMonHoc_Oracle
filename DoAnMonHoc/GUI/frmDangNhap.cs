@@ -32,6 +32,10 @@ namespace DoAnMonHoc.GUI
             else
             {
                 frmMenu menu = new frmMenu();
+
+                object value = table.Rows[0]["IDROLE"];
+                menu.IdRole = DBNull.Value.Equals(value) ? 0 : Convert.ToInt32(value);
+
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
                 this.Visible = false;
                 menu.ShowDialog();
