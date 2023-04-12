@@ -17,8 +17,8 @@ namespace DoAnMonHoc.DAL
         {
             //connection = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=host.docker.internal)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=Company)));User Id=C##hdaz;Password=123;");
             //connection = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS=(ADDRESS=(PROTOCOL=TCP)(HOST=host.docker.internal)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=Company)));User Id=C##hdaz;Password=123;");
-            //connection = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host.docker.internal)(PORT=1521))(CONNECT_DATA=(SID=xe)));User Id=C##hdaz;Password=123;");
-            
+            connection = new OracleConnection("Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host.docker.internal)(PORT=1521))(CONNECT_DATA=(SID=xe)));User Id=C##hdaz;Password=123;");
+
         }
 
         public DataTable LayDuLieu(string lenhsql)
