@@ -118,22 +118,268 @@ INSERT INTO DONHANG (MADONHANG, MADV, MAKH, MANV, NGAYDATHANG, DIACHI, SDT, TRAN
 VALUES ('DH008', 'DV003', 'KH003', 'NV006', TO_DATE('5/8/2023','dd/MM/yyyy'), N'22 Lê Lợi, Quận 5, TP HCM', '0358962155', N'Ðã giao', 900000, 4.9);
 
 
-CREATE OR REPLACE PROCEDURE get_employee_salary (
-    p_employee_id IN NUMBER,
-    p_salary OUT NUMBER
+--SELECT
+CREATE OR REPLACE PROCEDURE proc_xuat_thongtin_khachhang (out_cursor_ttkh OUT SYS_REFCURSOR)
+IS
+BEGIN
+  OPEN out_cursor_ttkh FOR
+  SELECT MAKH, TENKH, SDT, GMAIL
+  FROM KHACHHANG;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_xuat_thongtin_nhanvien (out_cursor_ttnv OUT SYS_REFCURSOR)
+IS
+BEGIN
+  OPEN out_cursor_ttnv FOR
+  SELECT MANV, TENNV, TENDANGNHAP, MATKHAU, MACV, GMAIL, CCCD, SDT, DIACHI
+  FROM NHANVIEN;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_xuat_thongtin_donhang (out_cursor_ttdh OUT SYS_REFCURSOR)
+IS
+BEGIN
+  OPEN out_cursor_ttdh FOR
+  SELECT MADONHANG, MADV, MAKH, MANV, NGAYDATHANG, DIACHI, SDT, TRANGTHAI, GIA_DONHANG, TRONGLUONG
+  FROM DONHANG;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_xuat_thongtin_dichvu (out_cursor_ttdv OUT SYS_REFCURSOR)
+IS
+BEGIN
+  OPEN out_cursor_ttdv FOR
+  SELECT MADV, TENDV, GIA
+  FROM DICHVU;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_xuat_thongtin_chucvu (out_cursor_ttcv OUT SYS_REFCURSOR)
+IS
+BEGIN
+  OPEN out_cursor_ttcv FOR
+  SELECT MACV, TENCV
+  FROM CHUCVU;
+END;
+
+--INSERT
+CREATE OR REPLACE PROCEDURE proc_insert_chucvu (
+    macv IN CHUCVU.MACV%TYPE,
+    tencv IN CHUCVU.TENCV%TYPE
 )
 IS
 BEGIN
-    SELECT salary INTO p_salary FROM employees WHERE employee_id = p_employee_id;
+    INSERT INTO CHUCVU (MACV, TENCV)
+    VALUES (macv, tencv);
+    COMMIT;
 END;
 
--- GỌI PROCEDURE
-DECLARE
-  p_salary number;
+CREATE OR REPLACE PROCEDURE proc_insert_nhanvien (
+    manv IN NHANVIEN.MANV%TYPE,
+    tennv IN NHANVIEN.TENNV%TYPE,
+    tendangnhap IN NHANVIEN.TENDANGNHAP%TYPE,
+    matkhau IN NHANVIEN.MATKHAU%TYPE,
+    macv IN NHANVIEN.MACV%TYPE,
+    gmail IN NHANVIEN.GMAIL%TYPE,
+    cccd IN NHANVIEN.CCCD%TYPE,
+    sdt IN NHANVIEN.SDT%TYPE,
+    diachi IN NHANVIEN.DIACHI%TYPE
+)
+IS
 BEGIN
-  get_employee_salary(1, p_salary);
-  DBMS_OUTPUT.PUT_LINE(p_salary);
+    INSERT INTO NHANVIEN (MANV, TENNV, TENDANGNHAP, MATKHAU, MACV, GMAIL, CCCD, SDT, DIACHI)
+    VALUES (manv, tennv, tendangnhap, matkhau, macv, gmail, cccd, sdt, diachi);
+    COMMIT;
 END;
 
---Bật màn hình để hiện kết quả khi chạy procedure
-SET SERVEROUTPUT ON;
+CREATE OR REPLACE PROCEDURE proc_insert_donhang (
+    madonhang IN DONHANG.MADONHANG%TYPE,
+    madv IN DONHANG.MADV%TYPE,
+    makh IN DONHANG.MAKH%TYPE,
+    manv IN DONHANG.MANV%TYPE,
+    ngaydathang IN DONHANG.NGAYDATHANG%TYPE,
+    diachi IN DONHANG.DIACHI%TYPE,
+    sdt IN DONHANG.SDT%TYPE,
+    trangthai IN DONHANG.TRANGTHAI%TYPE,
+    gia_donhang IN DONHANG.GIA_DONHANG%TYPE,
+    trongluong IN DONHANG.TRONGLUONG%TYPE
+)
+IS
+BEGIN
+    INSERT INTO DONHANG (MADONHANG, MADV, MAKH, MANV, NGAYDATHANG, DIACHI, SDT, TRANGTHAI, GIA_DONHANG, TRONGLUONG)
+    VALUES (madonhang, madv, makh, manv, ngaydathang, diachi, sdt, trangthai, gia_donhang, trongluong);
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_insert_khachhang (
+    makh IN KHACHHANG.MAKH%TYPE,
+    tenkh IN KHACHHANG.TENKH%TYPE,
+    diachi IN KHACHHANG.DIACHI%TYPE,
+    sdt IN KHACHHANG.SDT%TYPE,
+    gmail IN KHACHHANG.GMAIL%TYPE
+)
+IS
+BEGIN
+    INSERT INTO KHACHHANG (MAKH, TENKH, DIACHI, SDT, GMAIL)
+    VALUES (makh, tenkh, diachi, sdt, gmail);
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_insert_dichvu (
+    madv IN DICHVU.MADV%TYPE,
+    tendv IN DICHVU.TENDV%TYPE,
+    gia IN DICHVU.GIA%TYPE
+)
+IS
+BEGIN
+    INSERT INTO DICHVU (MADV, TENDV, GIA)
+    VALUES (madv, tendv, gia);
+    COMMIT;
+END;
+
+--UPDATE
+CREATE OR REPLACE PROCEDURE proc_update_chucvu (
+    p_macv IN CHUCVU.MACV%TYPE,
+    p_tencv IN CHUCVU.TENCV%TYPE
+)
+IS
+BEGIN
+    UPDATE CHUCVU
+    SET TENCV = p_tencv
+    WHERE MACV = p_macv;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_update_nhanvien (
+    p_manv IN NHANVIEN.MANV%TYPE,
+    p_tennv IN NHANVIEN.TENNV%TYPE,
+    p_tendangnhap IN NHANVIEN.TENDANGNHAP%TYPE,
+    p_matkhau IN NHANVIEN.MATKHAU%TYPE,
+    p_macv IN NHANVIEN.MACV%TYPE,
+    p_gmail IN NHANVIEN.GMAIL%TYPE,
+    p_cccd IN NHANVIEN.CCCD%TYPE,
+    p_sdt IN NHANVIEN.SDT%TYPE,
+    p_diachi IN NHANVIEN.DIACHI%TYPE
+)
+IS
+BEGIN
+    UPDATE NHANVIEN 
+    SET TENNV = p_tennv, 
+    TENDANGNHAP = p_tendangnhap, 
+    MATKHAU = p_matkhau, 
+    MACV = p_macv, 
+    GMAIL = p_gmail, 
+    CCCD = p_cccd, 
+    SDT = p_sdt, 
+    DIACHI = p_diachi
+    WHERE MANV = p_manv;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_update_donhang (
+    p_madonhang IN DONHANG.MADONHANG%TYPE,
+    p_madv IN DONHANG.MADV%TYPE,
+    p_makh IN DONHANG.MAKH%TYPE,
+    p_manv IN DONHANG.MANV%TYPE,
+    p_ngaydathang IN DONHANG.NGAYDATHANG%TYPE,
+    p_diachi IN DONHANG.DIACHI%TYPE,
+    p_sdt IN DONHANG.SDT%TYPE,
+    p_trangthai IN DONHANG.TRANGTHAI%TYPE,
+    p_gia_donhang IN DONHANG.GIA_DONHANG%TYPE,
+    p_trongluong IN DONHANG.TRONGLUONG%TYPE
+)
+IS
+BEGIN
+    UPDATE DONHANG 
+    SET MADV = p_madv, 
+    MAKH = p_makh, 
+    MANV = p_manv, 
+    NGAYDATHANG = p_ngaydathang, 
+    DIACHI = p_diachi, 
+    SDT = p_sdt, 
+    TRANGTHAI = p_trangthai, 
+    GIA_DONHANG = p_gia_donhang, 
+    TRONGLUONG = p_trongluong
+    WHERE MADONHANG = p_madonhang;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_update_khachhang (
+    p_makh IN KHACHHANG.MAKH%TYPE,
+    p_tenkh IN KHACHHANG.TENKH%TYPE,
+    p_diachi IN KHACHHANG.DIACHI%TYPE,
+    p_sdt IN KHACHHANG.SDT%TYPE,
+    p_gmail IN KHACHHANG.GMAIL%TYPE
+)
+IS
+BEGIN
+    UPDATE KHACHHANG
+    SET TENKH = p_tenkh, 
+    DIACHI = p_diachi, 
+    SDT = p_sdt, 
+    GMAIL = p_gmail
+    WHERE MAKH = p_makh;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_update_dichvu (
+    p_madv IN DICHVU.MADV%TYPE,
+    p_tendv IN DICHVU.TENDV%TYPE,
+    p_gia IN DICHVU.GIA%TYPE
+)
+IS
+BEGIN
+    UPDATE DICHVU
+    SET TENDV = p_tendv, 
+    GIA = p_gia
+    WHERE MADV = p_madv;
+    COMMIT;
+END;
+
+--DELETE
+CREATE OR REPLACE PROCEDURE proc_delete_chucvu (
+    p_macv IN CHUCVU.MACV%TYPE
+)
+IS
+BEGIN
+    DELETE FROM CHUCVU
+    WHERE MACV = p_macv;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_delete_nhanvien (
+    p_manv IN NHANVIEN.MANV%TYPE
+)
+IS
+BEGIN
+    DELETE FROM NHANVIEN 
+    WHERE MANV = p_manv;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_delete_donhang (
+    p_madonhang IN DONHANG.MADONHANG%TYPE
+)
+IS
+BEGIN
+    DELETE FROM DONHANG 
+    WHERE MADONHANG = p_madonhang;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_delete_khachhang (
+    p_makh IN KHACHHANG.MAKH%TYPE
+)
+IS
+BEGIN
+    DELETE FROM KHACHHANG
+    WHERE MAKH = p_makh;
+    COMMIT;
+END;
+
+CREATE OR REPLACE PROCEDURE proc_delete_dichvu (
+    p_madv IN DICHVU.MADV%TYPE
+)
+IS
+BEGIN
+    DELETE FROM DICHVU
+    WHERE MADV = p_madv;
+    COMMIT;
+END;

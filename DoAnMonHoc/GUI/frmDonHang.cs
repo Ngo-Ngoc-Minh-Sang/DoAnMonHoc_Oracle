@@ -28,13 +28,13 @@ namespace DoAnMonHoc.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -44,56 +44,56 @@ namespace DoAnMonHoc.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
-                
-            
+
+
+
         }
 
         private void btnHuyDH_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cbxTenKH_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dtpNgayDatHang_Leave(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtTrongLuong_Leave(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtTenNguoiNhan_Leave(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            
+
+
         }
 
         private void btnRefesh_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -129,7 +129,7 @@ namespace DoAnMonHoc.GUI
             txtSDTNguoiGui.Text = string.Empty;
             txtGiaDonHang.Text = string.Empty;
 
-            
+
         }
 
         List<int> listdoanhso = new List<int>();
@@ -294,43 +294,55 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show(this, "Chọn 1 dòng để xóa");
         }
 
+        List<int> listtrudoanhso = new List<int>();
+        List<string> listtrumakh = new List<string>();
+        List<string> listmadonhang = new List<string>();
+
         private void btnHuyDH_Click_1(object sender, EventArgs e)
         {
+            listtrudoanhso.Add(int.Parse(txtGiaDonHang.Text));
+            listtrumakh.Add(cbxTenKH.SelectedValue.ToString());
+            listmadonhang.Add(txtMaDH.Text.ToString());
+            btnCapNhat.Enabled=true;
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
 
             }
-            string trangthai = cbxTrangThai.Items[3].ToString();
-            string ma = txtMaDH.Text.Trim();
-            string sqlUpdate = "update donhang set ngayhuydon = SYSDATE where MADONHANG = '" + ma + "'";
-            OracleCommand cmd = new OracleCommand(sqlUpdate, connection);
-            //cmd.Parameters.Add(":ma",OracleDbType.Varchar2).Value=ma;
-            cmd.ExecuteNonQuery();
-            if (cmd.ExecuteNonQuery() > 0)
+            foreach (DataRow row in dtViewDonHang.Rows)
             {
-                MessageBox.Show(this, "Đã hủy đơn");
-                //int rowIndex = dtViewDonHang.Rows.IndexOf(dtViewDonHang.Select("madonhang = " + ma)[0]);
-
-                //// Cập nhật lại dữ liệu của dòng đó trong DataTable
-                //dtViewDonHang.Rows[rowIndex]["ngayhuydon"] = DateTime.Now;
-
-                //// Cập nhật lại DataGridView
-                //dataGridView1.Refresh();
-
-                foreach (DataRow row in dtViewDonHang.Rows)
+                if (row["madonhang"].ToString().Equals(txtMaDH.Text))
                 {
-                    if (row["madonhang"].ToString().Equals(ma))
-                    {
-                        row["ngayhuydon"] = DateTime.Now;
-                    }
+                    row["ngayhuydon"] = DateTime.Now;
+                    row["trangthai"] = cbxTrangThai.Items[3].ToString();
+                    MessageBox.Show("Đã hủy đơn hàng " + txtMaDH.Text.Trim());
                 }
+            }
+            //string trangthai = cbxTrangThai.Items[3].ToString();
+            //string ma = txtMaDH.Text.Trim();
+            //string sqlUpdate = "update donhang set ngayhuydon = SYSDATE where MADONHANG = '" + ma + "'";
+            //OracleCommand cmd = new OracleCommand(sqlUpdate, connection);
+            ////cmd.Parameters.Add(":ma",OracleDbType.Varchar2).Value=ma;
+            //cmd.ExecuteNonQuery();
+            //if (cmd.ExecuteNonQuery() > 0)
+            //{
+            //    MessageBox.Show(this, "Đã hủy đơn");
 
-            }
-            else
-            {
-                MessageBox.Show(this, "Hủy đơn thất bại");
-            }
+
+            //    foreach (DataRow row in dtViewDonHang.Rows)
+            //    {
+            //        if (row["madonhang"].ToString().Equals(ma))
+            //        {
+            //            row["ngayhuydon"] = DateTime.Now;
+            //        }
+            //    }
+            //    dataGridView1.Refresh();
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show(this, "Hủy đơn thất bại");
+            //}
             connection.Close();
         }
 
@@ -346,34 +358,16 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show("Cap Nhat Thanh Cong");
                 btnCapNhat.Enabled = false;
             }
-            else
-                MessageBox.Show("Cap nhat that bai");
 
             //them doanh so kh
-            if (connection.State == ConnectionState.Closed)
+            
+            if(listdoanhso.Count > 0)
             {
-                connection.Open();
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
 
-            }
-            //string updateDoanhSoKH = "update khachhang set doanhso = doanhso"+ int.Parse(txtGiaDonHang.Text) + "where makh= '" + cbxTenKH.SelectedValue.ToString() +"' ;";
-            //OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
-            ////command.Parameters.Add(":ds", OracleDbType.Int16).Value = txtGiaDonHang.Text;
-            ////command.Parameters.Add(":makh", OracleDbType.Varchar2).Value = cbxTenKH.SelectedValue;
-            //command.ExecuteNonQuery();
-            //if (command.ExecuteNonQuery() > 0)
-            //    connection.Close();
-
-
-            //for (int i = 0; i < listdoanhso.Count; i++)
-            //{
-            //    string updateDoanhSoKH = "update khachhang set doanhso = doanhso" + listdoanhso[i] + "where makh= '" + listmakh[i] + "' ;";
-            //    OracleCommand command = new OracleCommand(updateDoanhSoKH, connection);
-            //    command.ExecuteNonQuery();
-
-            //}
-            //connection.Close() ;
-
-
+                }
                 for (int i = 0; i < listdoanhso.Count; i++)
                 {
                     string updateDoanhSoKH = "UPDATE khachhang SET doanhso = doanhso + :value WHERE makh = :makh";
@@ -382,10 +376,44 @@ namespace DoAnMonHoc.GUI
                     command.Parameters.Add(":makh", OracleDbType.Varchar2).Value = listmakh[i];
                     command.ExecuteNonQuery();
                 }
+                MessageBox.Show("Thành công");
+                connection.Close();
+            }
 
-            connection.Close() ;
+            if(listtrudoanhso.Count > 0)
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
 
+                }
+                for (int i = 0; i < listtrudoanhso.Count; i++)
+                {
+                    string updatetruDoanhSoKH = "BEGIN update_trudoanhso_kh(:ds,:makh);END;";
+                    OracleCommand command = new OracleCommand(updatetruDoanhSoKH, connection);
+                    command.Parameters.Add(":ds", OracleDbType.Int32).Value = listtrudoanhso[i];
+                    command.Parameters.Add(":makh", OracleDbType.Varchar2).Value = listtrumakh[i];
+                    command.ExecuteNonQuery();
+                }
+                MessageBox.Show("Thành công");
+                connection.Close();
+            }
+            if (listmadonhang.Count > 0)
+            {
+                if (connection.State == ConnectionState.Closed)
+                {
+                    connection.Open();
 
+                }
+                for (int i = 0; i < listmadonhang.Count; i++)
+                {
+                    OracleCommand command = new OracleCommand("BEGIN trangThaiHuy(:madh); END;", connection);
+                    command.Parameters.Add(":madh", OracleDbType.Varchar2).Value = listmadonhang[i];
+                    command.ExecuteNonQuery();
+                }
+                MessageBox.Show("Thành Công");
+                connection.Close();
+            }
 
 
         }
@@ -522,7 +550,7 @@ namespace DoAnMonHoc.GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -534,7 +562,7 @@ namespace DoAnMonHoc.GUI
         {
 
 
-            
+
 
 
 
@@ -545,7 +573,7 @@ namespace DoAnMonHoc.GUI
 
         private void FormDonHang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
         }
 
         private void FormDonHang_FormClosed(object sender, FormClosedEventArgs e)

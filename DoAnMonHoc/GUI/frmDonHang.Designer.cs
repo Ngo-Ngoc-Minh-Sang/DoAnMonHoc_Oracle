@@ -72,19 +72,17 @@
             this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnRefesh = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -589,20 +587,6 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 3);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1848, 323);
-            this.dataGridView1.TabIndex = 192;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
-            // 
             // btnRefesh
             // 
             this.btnRefesh.BackColor = System.Drawing.Color.NavajoWhite;
@@ -618,14 +602,6 @@
             this.btnRefesh.UseVisualStyleBackColor = false;
             this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click_1);
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.dataGridView1);
-            this.panel7.Location = new System.Drawing.Point(0, 309);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1420, 329);
-            this.panel7.TabIndex = 201;
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.btnRefesh);
@@ -636,17 +612,32 @@
             this.panel8.Size = new System.Drawing.Size(1420, 100);
             this.panel8.TabIndex = 202;
             // 
-            // FormDonHang
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 309);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1420, 338);
+            this.dataGridView1.TabIndex = 192;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
+            // 
+            // frmDonHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1660, 747);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
-            this.Name = "FormDonHang";
+            this.Name = "frmDonHang";
             this.Text = "FormDonHang";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDonHang_FormClosing);
@@ -661,9 +652,8 @@
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -711,9 +701,8 @@
         private System.Windows.Forms.Button btnDaGiao;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnRefesh;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
