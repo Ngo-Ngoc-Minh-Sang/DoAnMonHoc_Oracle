@@ -88,29 +88,41 @@
   <ItemGroup>
     <Compile Include="DAL\DataHelper.cs" />
     <Compile Include="DAL\XuLyDuLieu.cs" />
-    <Compile Include="GUI\DangNhap.cs">
+    <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\DangNhap.Designer.cs">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <Compile Include="GUI\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DichVu.cs">
+    <Compile Include="GUI\frmDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\DichVu.Designer.cs">
-      <DependentUpon>DichVu.cs</DependentUpon>
+    <Compile Include="GUI\frmDichVu.Designer.cs">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormDonHang.cs">
+    <Compile Include="GUI\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormDonHang.Designer.cs">
-      <DependentUpon>FormDonHang.cs</DependentUpon>
+    <Compile Include="GUI\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmHuongDanKetNoiDB.cs">
+    <Compile Include="GUI\TestProcedure.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmHuongDanKetNoiDB.Designer.cs">
-      <DependentUpon>frmHuongDanKetNoiDB.cs</DependentUpon>
+    <Compile Include="GUI\TestProcedure.Designer.cs">
+      <DependentUpon>TestProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDonHang.Designer.cs">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -118,31 +130,29 @@
     <Compile Include="GUI\frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\DangNhap.resx">
-      <DependentUpon>DangNhap.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DichVu.resx">
-      <DependentUpon>DichVu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmDichVu.resx">
+      <DependentUpon>frmDichVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormDonHang.resx">
-      <DependentUpon>FormDonHang.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmHuongDanKetNoiDB.resx">
-      <DependentUpon>frmHuongDanKetNoiDB.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\TestProcedure.resx">
+      <DependentUpon>TestProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDonHang.resx">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +162,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
@@ -174,8 +185,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BBL\" />
-    <Folder Include="DTO\" />
+    <None Include="Assets\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
