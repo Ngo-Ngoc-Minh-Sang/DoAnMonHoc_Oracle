@@ -12,6 +12,7 @@ namespace DoAnMonHoc.GUI
 {
     public partial class frmMenu : Form
     {
+        public int IdRole { get; set; }
         public frmMenu()
         {
             InitializeComponent();
@@ -57,6 +58,17 @@ namespace DoAnMonHoc.GUI
             this.Visible = false;
             frmDangNhap dn = new frmDangNhap();
             dn.ShowDialog();
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            if (IdRole == 3)
+            {
+                btnPost.Visible = false;
+                btnCustomer.Visible = false;
+                btnService.Visible = false;
+                btnEmployee.Visible = false;
+            }
         }
     }
 }

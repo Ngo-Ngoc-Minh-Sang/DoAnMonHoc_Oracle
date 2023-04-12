@@ -42,11 +42,11 @@ namespace DoAnMonHoc.GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Piracy", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(328, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 60);
+            this.label1.Size = new System.Drawing.Size(210, 69);
             this.label1.TabIndex = 8;
             this.label1.Text = "MENU";
             // 
@@ -176,6 +176,7 @@ namespace DoAnMonHoc.GUI
             this.Controls.Add(this.btnCustomer);
             this.Name = "frmMenu";
             this.Text = "frmMenu2";
+            this.Load += new System.EventHandler(this.frmMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
