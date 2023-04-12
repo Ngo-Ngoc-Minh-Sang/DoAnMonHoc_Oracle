@@ -19,7 +19,7 @@ namespace DoAnMonHoc
             //Application.Run(new GUI.frmHuongDanKetNoiDB());
 
             //Application.Run(new GUI.FormDonHang());
-            Application.Run(new GUI.frmDichVu());
+            Application.Run(new GUI.frmMenu());
         }
     }
 }

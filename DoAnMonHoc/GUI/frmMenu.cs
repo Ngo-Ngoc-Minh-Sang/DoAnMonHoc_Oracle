@@ -37,8 +37,7 @@ namespace DoAnMonHoc.GUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmNVDangNhap nv = new frmNVDangNhap();
-            nv.ShowDialog();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -48,7 +47,8 @@ namespace DoAnMonHoc.GUI
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            frmNVDangNhap nv = new frmNVDangNhap();
+            nv.ShowDialog();
         }
 
         private void button7_Click(object sender, EventArgs e)

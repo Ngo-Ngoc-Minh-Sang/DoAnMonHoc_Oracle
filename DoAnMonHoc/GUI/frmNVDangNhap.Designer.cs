@@ -40,11 +40,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.textCCCD = new System.Windows.Forms.TextBox();
             this.textSDT = new System.Windows.Forms.TextBox();
             this.textDC = new System.Windows.Forms.TextBox();
-            this.textMK = new System.Windows.Forms.TextBox();
             this.btnDoiMK = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -155,21 +153,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(34, 298);
+            this.label8.Location = new System.Drawing.Point(242, 301);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 26);
             this.label8.TabIndex = 12;
             this.label8.Text = "Địa chỉ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(516, 298);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 26);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Mật khẩu";
             // 
             // textCCCD
             // 
@@ -190,25 +178,17 @@
             // textDC
             // 
             this.textDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDC.Location = new System.Drawing.Point(206, 292);
+            this.textDC.Location = new System.Drawing.Point(386, 298);
             this.textDC.Name = "textDC";
             this.textDC.Size = new System.Drawing.Size(217, 32);
             this.textDC.TabIndex = 16;
-            // 
-            // textMK
-            // 
-            this.textMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textMK.Location = new System.Drawing.Point(705, 292);
-            this.textMK.Name = "textMK";
-            this.textMK.Size = new System.Drawing.Size(217, 32);
-            this.textMK.TabIndex = 17;
             // 
             // btnDoiMK
             // 
             this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoiMK.Location = new System.Drawing.Point(247, 427);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(120, 66);
+            this.btnDoiMK.Size = new System.Drawing.Size(190, 66);
             this.btnDoiMK.TabIndex = 19;
             this.btnDoiMK.Text = "Đổi mật khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
@@ -232,11 +212,9 @@
             this.ClientSize = new System.Drawing.Size(955, 608);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDoiMK);
-            this.Controls.Add(this.textMK);
             this.Controls.Add(this.textDC);
             this.Controls.Add(this.textSDT);
             this.Controls.Add(this.textCCCD);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -269,11 +247,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textCCCD;
         private System.Windows.Forms.TextBox textSDT;
         private System.Windows.Forms.TextBox textDC;
-        private System.Windows.Forms.TextBox textMK;
         private System.Windows.Forms.Button btnDoiMK;
         private System.Windows.Forms.Button btnThoat;
     }
