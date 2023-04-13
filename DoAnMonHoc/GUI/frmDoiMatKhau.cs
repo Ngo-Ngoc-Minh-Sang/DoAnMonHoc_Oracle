@@ -28,7 +28,7 @@ namespace DoAnMonHoc.GUI
             }
 
             // Kiểm tra xem mật khẩu hiện tại có đúng không
-            if (textMKCu.Text != GetMatKhauHienTai())
+            if (textMKCu.Text.Trim() != GetMatKhauHienTai().Trim())
             {
                 MessageBox.Show("Mật khẩu hiện tại không đúng! Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -37,7 +37,7 @@ namespace DoAnMonHoc.GUI
             
             // Kiểm tra xem mật khẩu mới và xác nhận mật khẩu mới có khớp nhau không
             // CẨN THẬN LỖI
-            if (textMKMoi.Text != btnXacNhan.Text)
+            if (textMKMoi.Text.Trim() != txtNhapLaiMK.Text.Trim())
             {
                 MessageBox.Show("Mật khẩu mới và xác nhận mật khẩu mới không khớp nhau! Vui lòng kiểm tra lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -53,26 +53,16 @@ namespace DoAnMonHoc.GUI
                 UpdateMatKhauMoi(textMKMoi.Text);
                 MessageBox.Show("Đổi mật khẩu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                // Hủy bỏ thao tác đổi mật khẩu nếu người dùng chọn No
-                MessageBox.Show("Đã hủy đổi mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
         private string GetMatKhauHienTai()
         {
             try
             {
-                string query = "SELECT MATKHAU FROM NHANVIEN WHERE TENDANGNHAP = '" + textTenDN.Text + "'";
+                string query = "SELECT * FROM NHANVIEN WHERE MANV = '" + frmDangNhap.maNhanVien + "'";
                 DataTable dt = helper.ExecuteQuery(query);
-                if (dt.Rows.Count > 0)
-                {
-                    return dt.Rows[0]["MATKHAU"].ToString();
-                }
-                else
-                {
-                    throw new Exception("Tài khoản không tồn tại");
-                }
+                DataRow row = dt.Rows[0];
+                string a = row["MATKHAU"].ToString();
+                return a;
             }
             catch (Exception ex)
             {
@@ -84,9 +74,8 @@ namespace DoAnMonHoc.GUI
         {
             try
             {
-                string query = "UPDATE NHANVIEN SET MATKHAU = '" + matKhauMoi + "' WHERE TENDANGNHAP = '" + textTenDN.Text + "'";
+                string query = "UPDATE NHANVIEN SET MATKHAU = '" + matKhauMoi.Trim() + "' WHERE MANV = '" + frmDangNhap.maNhanVien + "'";
                 helper.ExecuteQuery(query);
-                MessageBox.Show("Đổi mật khẩu thành công!");
             }
             catch (Exception ex)
             {

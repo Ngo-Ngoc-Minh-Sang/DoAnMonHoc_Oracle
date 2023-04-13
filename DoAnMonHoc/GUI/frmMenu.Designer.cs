@@ -29,6 +29,7 @@ namespace DoAnMonHoc.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.label1 = new System.Windows.Forms.Label();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@ namespace DoAnMonHoc.GUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(328, 19);
+            this.label1.Location = new System.Drawing.Point(415, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 69);
             this.label1.TabIndex = 8;
@@ -55,7 +56,7 @@ namespace DoAnMonHoc.GUI
             this.btnEmployee.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.Red;
-            this.btnEmployee.Image = global::DoAnMonHoc.Properties.Resources.employee;
+            this.btnEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployee.Image")));
             this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnEmployee.Location = new System.Drawing.Point(448, 265);
             this.btnEmployee.Name = "btnEmployee";
@@ -71,7 +72,7 @@ namespace DoAnMonHoc.GUI
             this.btnLogout.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.Red;
-            this.btnLogout.Image = global::DoAnMonHoc.Properties.Resources.logout1;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLogout.Location = new System.Drawing.Point(720, 423);
             this.btnLogout.Name = "btnLogout";
@@ -87,7 +88,7 @@ namespace DoAnMonHoc.GUI
             this.btnInfoEmployee.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnInfoEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfoEmployee.ForeColor = System.Drawing.Color.Red;
-            this.btnInfoEmployee.Image = global::DoAnMonHoc.Properties.Resources.information;
+            this.btnInfoEmployee.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoEmployee.Image")));
             this.btnInfoEmployee.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnInfoEmployee.Location = new System.Drawing.Point(448, 423);
             this.btnInfoEmployee.Name = "btnInfoEmployee";
@@ -103,7 +104,7 @@ namespace DoAnMonHoc.GUI
             this.btnPost.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnPost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPost.ForeColor = System.Drawing.Color.Red;
-            this.btnPost.Image = global::DoAnMonHoc.Properties.Resources.post;
+            this.btnPost.Image = ((System.Drawing.Image)(resources.GetObject("btnPost.Image")));
             this.btnPost.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPost.Location = new System.Drawing.Point(22, 423);
             this.btnPost.Name = "btnPost";
@@ -119,7 +120,7 @@ namespace DoAnMonHoc.GUI
             this.btnService.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnService.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnService.ForeColor = System.Drawing.Color.Red;
-            this.btnService.Image = global::DoAnMonHoc.Properties.Resources.service;
+            this.btnService.Image = ((System.Drawing.Image)(resources.GetObject("btnService.Image")));
             this.btnService.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnService.Location = new System.Drawing.Point(448, 107);
             this.btnService.Name = "btnService";
@@ -135,7 +136,7 @@ namespace DoAnMonHoc.GUI
             this.btnOrder.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.ForeColor = System.Drawing.Color.Red;
-            this.btnOrder.Image = global::DoAnMonHoc.Properties.Resources.order;
+            this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
             this.btnOrder.Location = new System.Drawing.Point(235, 107);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(207, 310);
@@ -150,7 +151,7 @@ namespace DoAnMonHoc.GUI
             this.btnCustomer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.Red;
-            this.btnCustomer.Image = global::DoAnMonHoc.Properties.Resources.customer;
+            this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.Location = new System.Drawing.Point(22, 107);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(207, 310);

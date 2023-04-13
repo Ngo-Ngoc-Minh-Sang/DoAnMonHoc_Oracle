@@ -79,7 +79,7 @@ namespace DoAnMonHoc.GUI
             this.btnLogin.Location = new System.Drawing.Point(208, 327);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(144, 54);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -87,20 +87,20 @@ namespace DoAnMonHoc.GUI
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(229, 205);
+            this.txtUserName.Location = new System.Drawing.Point(236, 138);
             this.txtUserName.Multiline = true;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(353, 34);
-            this.txtUserName.TabIndex = 5;
+            this.txtUserName.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(229, 143);
+            this.txtPassword.Location = new System.Drawing.Point(236, 205);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(353, 35);
-            this.txtPassword.TabIndex = 6;
+            this.txtPassword.TabIndex = 1;
             // 
             // btnExit
             // 
@@ -110,7 +110,7 @@ namespace DoAnMonHoc.GUI
             this.btnExit.Location = new System.Drawing.Point(445, 327);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(144, 54);
-            this.btnExit.TabIndex = 7;
+            this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = false;
             // 

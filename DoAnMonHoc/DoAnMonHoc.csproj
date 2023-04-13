@@ -118,6 +118,12 @@
     <Compile Include="GUI\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNhanVien.Designer.cs">
+      <DependentUpon>frmThongTinNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\TestProcedure.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,12 +135,6 @@
     </Compile>
     <Compile Include="GUI\frmDonHang.Designer.cs">
       <DependentUpon>frmDonHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmNVDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmNVDangNhap.Designer.cs">
-      <DependentUpon>frmNVDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -160,14 +160,14 @@
     <EmbeddedResource Include="GUI\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinNhanVien.resx">
+      <DependentUpon>frmThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\TestProcedure.resx">
       <DependentUpon>TestProcedure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDonHang.resx">
       <DependentUpon>frmDonHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmNVDangNhap.resx">
-      <DependentUpon>frmNVDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
@@ -175,13 +175,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -193,6 +187,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -203,25 +202,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Assets\customer.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\order.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\service.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Assets\employee.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\post.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\information.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\unhide.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

@@ -14,6 +14,7 @@ namespace DoAnMonHoc.GUI
     public partial class frmDangNhap : Form
     {
         DAL.DataHelper helper = new DAL.DataHelper();
+        public static string maNhanVien;
         public frmDangNhap()
         {
             InitializeComponent();
@@ -31,8 +32,9 @@ namespace DoAnMonHoc.GUI
                 MessageBox.Show("Sai mật khẩu hoặc tài khoản. Vui lòng đăng nhập lại!", "Thông báo", MessageBoxButtons.OK);
             else
             {
+                DataRow row = table.Rows[0];
+                maNhanVien = row["MaNV"].ToString();
                 frmMenu menu = new frmMenu();
-                MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK);
                 this.Visible = false;
                 menu.ShowDialog();
             }
