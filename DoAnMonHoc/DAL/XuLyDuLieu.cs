@@ -28,7 +28,7 @@ namespace DoAnMonHoc.DAL
         {
             adapter = new OracleDataAdapter(lenhsql, connection);
             DataTable dt = new DataTable();
-            adapter.Fill(dt);   
+            adapter.Fill(dt);
             return dt;
         }
 
