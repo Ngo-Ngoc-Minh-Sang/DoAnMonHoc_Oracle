@@ -383,3 +383,27 @@ BEGIN
     WHERE MADV = p_madv;
     COMMIT;
 END;
+
+
+
+
+
+
+
+--FUNCTION KIỂM TRA ĐĂNG NHẬP
+CREATE OR REPLACE FUNCTION func_kiemtradangnhap(p_tendangnhap IN NHANVIEN.TENDANGNHAP%TYPE,
+    p_matkhau IN NHANVIEN.MATKHAU%TYPE) RETURN BOOLEAN IS
+    checkLogin BOOLEAN;
+    maNV CHAR(10);
+BEGIN
+    -- Kiểm tra xem khách hàng có tồn tại trong danh sách hay không
+    SELECT MANV INTO maNV FROM NHANVIEN WHERE TENDANGNHAP = tendangnhap AND MATKHAU = matkhau;
+
+    IF maNV IS NULL THEN
+        RETURN false;
+    ELSE
+        RETURN true;
+    END IF;
+END;
+
+SELECT func_kiemtradangnhap('user01', '123456') FROM NHANVIEN;
