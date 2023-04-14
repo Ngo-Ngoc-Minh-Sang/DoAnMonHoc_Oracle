@@ -321,6 +321,8 @@ CREATE OR REPLACE PROCEDURE proc_update_khachhang (
     p_sdt IN KHACHHANG.SDT%TYPE,
     p_gmail IN KHACHHANG.GMAIL%TYPE
 )
+
+
 IS
 BEGIN
     UPDATE KHACHHANG
@@ -396,6 +398,127 @@ BEGIN
     WHERE MADV = p_madv;
     COMMIT;
 END;
+
+/*tao cap nhat don hang */
+CREATE OR REPLACE PROCEDURE UPDATE_DONHANG(
+    P_MADONHANG IN CHAR,
+    P_MADV IN CHAR,
+    P_MAKH IN CHAR,
+    P_MANV IN CHAR,
+    P_NGAYDATHANG IN DATE,
+    P_DIACHI IN VARCHAR2,
+    P_SDTNGUOINHAN IN CHAR,
+    P_TRANGTHAI IN VARCHAR2,
+    P_GIA_DONHANG IN INT,
+    P_TRONGLUONG IN number,
+    P_TENNGUOINHAN IN VARCHAR2
+)
+IS
+BEGIN
+    UPDATE DONHANG
+    SET MADV = P_MADV,
+        MAKH = P_MAKH,
+        MANV = P_MANV,
+        NGAYDATHANG = P_NGAYDATHANG,
+        DIACHI = P_DIACHI,
+        SDTNGUOINHAN = P_SDTNGUOINHAN,
+        TRANGTHAI = P_TRANGTHAI,
+        GIA_DONHANG = P_GIA_DONHANG,
+        TRONGLUONG = P_TRONGLUONG,
+        TENNGUOINHAN = P_TENNGUOINHAN
+    WHERE MADONHANG = P_MADONHANG;
+    COMMIT;
+END;
+BEGIN
+    UPDATE_DONHANG('DH035','DV004','KH004','NV002',TO_DATE('15/8/2023','dd/MM/yyyy'),'11111111111','31312','dang giao',15000,1,'da');
+END;
+/   
+Show errors;
+
+
+--cap nhat trang thai da huy cho don hang
+CREATE OR REPLACE PROCEDURE trangThaiHuy(p_madh IN CHAR) AS
+v_trangthai VARCHAR2(20);
+BEGIN
+SELECT trangthai INTO v_trangthai FROM donhang WHERE madonhang = p_madh;
+IF v_trangthai <> 'Da giao' THEN -- toan tu <> tuong doi giong !=
+UPDATE donhang SET trangthai = 'Da huy' WHERE madonhang = p_madh;
+END IF;
+END;
+
+BEGIN
+ trangThaiHuy('DH018');
+END;
+
+--cap nhat trang thai da giao cho don hang neu don hang trong tinh trang dang giao
+CREATE OR REPLACE PROCEDURE trangThaiDaGiao(p_madh IN CHAR) AS
+v_trangthai VARCHAR2(20);
+BEGIN
+SELECT trangthai INTO v_trangthai FROM donhang WHERE madonhang = p_madh;
+IF v_trangthai <> 'Da huy' AND v_trangthai <> 'Chua giao' THEN -- toan tu <> tuong doi giong !=
+UPDATE donhang SET trangthai = 'Da giao' WHERE madonhang = p_madh;
+END IF;
+END;
+
+BEGIN
+ trangThaiDaGiao('DH031');
+END;
+
+/*cap nhat trang thai dang giao cho don hang neu don hang trong tinh trang chua giao */
+CREATE OR REPLACE PROCEDURE trangThaiDangGiao(p_madh IN CHAR) AS
+v_trangthai VARCHAR2(20);
+BEGIN
+SELECT trangthai INTO v_trangthai FROM donhang WHERE madonhang = p_madh;
+IF v_trangthai <> 'Da giao' AND v_trangthai <> 'Da huy' THEN -- toan tu <> tuong doi giong !=
+UPDATE donhang SET trangthai = 'Dang giao' WHERE madonhang = p_madh;
+END IF;
+END;
+
+BEGIN
+ trangThaiDangGiao('DH011');
+END;
+
+
+/*tru doanh so khi khach hang co don hang bi huy hoac bi xoa*/
+CREATE OR REPLACE PROCEDURE update_trudoanhso_kh(p_ds IN NUMBER, p_makh IN CHAR) 
+AS
+BEGIN
+  UPDATE khachhang SET doanhso = doanhso - p_ds WHERE makh = p_makh;
+END;
+
+BEGIN
+ update_trudoanhso_kh(15000,'KH004');
+END;
+
+/*them don hang doanh so cua khachhang se tang theo gia tri*/
+CREATE OR REPLACE PROCEDURE update_doanhso_kh(p_ds IN NUMBER, p_makh IN CHAR) 
+AS
+BEGIN
+  UPDATE khachhang SET doanhso = doanhso + p_ds WHERE makh = p_makh;
+END;
+
+BEGIN
+ update_doanhso_kh(50000,'KH001');
+END;
+
+
+
+
+/*chinh sua thuoc tinh*/
+ALTER TABLE donhang MODIFY trongluong number;
+ALTER TABLE donhang ADD tennguoinhan varchar2(255);
+ALTER TABLE donhang ADD ngayhuydon date;
+ALTER TABLE donhang RENAME COLUMN sdt TO sdtnguoinhan;
+ALTER TABLE khachhang RENAME COLUMN gmail TO mail;
+
+/*DOI KIEU DATE*/
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY';
+
+/*view cho datagridview*/
+create view view_donhang_2 as
+select dh.madonhang, dv.tendv,kh.tenkh,nv.tennv,dh.tennguoinhan,dh.trangthai,dh.ngaydathang,dh.diachi,dh.sdtnguoinhan,dh.trongluong,dh.gia_donhang,kh.sdt as sdt_kh,dh.ngayhuydon
+from donhang dh,khachhang kh,nhanvien nv, dichvu dv
+where dh.makh = kh.makh and dh.manv = nv.manv and dh.madv = dv.madv
 
 
 
