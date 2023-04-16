@@ -38,7 +38,8 @@ namespace DoAnMonHoc.GUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            frmNhanVien nv = new frmNhanVien();
+            nv.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
