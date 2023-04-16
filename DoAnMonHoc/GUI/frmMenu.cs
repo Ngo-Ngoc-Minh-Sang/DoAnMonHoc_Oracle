@@ -12,7 +12,7 @@ namespace DoAnMonHoc.GUI
 {
     public partial class frmMenu : Form
     {
-        public int IdRole { get; set; }
+        DAL.DataHelper helper = new DAL.DataHelper();
         public frmMenu()
         {
             InitializeComponent();
@@ -63,12 +63,27 @@ namespace DoAnMonHoc.GUI
 
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            if (IdRole == 3)
+            String maNVLogin = frmDangNhap.maNhanVien;
+            DataTable table = helper.ExecuteQuery("select * from NHANVIEN nv, CHUCVU cv where nv.MACV = cv.MACV and MANV = '" + maNVLogin + "'");
+            DataRow row = table.Rows[0];
+            string chucVu = row["MACV"].ToString();
+            phanQuyenHeThong(chucVu);
+        }
+
+        private void phanQuyenHeThong(string chucvu)
+        {
+            chucvu = chucvu.Trim();
+            if (chucvu == "CV002" || chucvu == "CV004")
             {
-                btnPost.Visible = false;
-                btnCustomer.Visible = false;
-                btnService.Visible = false;
-                btnEmployee.Visible = false;
+                btnPost.Enabled = false;
+                btnCustomer.Enabled = false;
+                btnService.Enabled = false;
+                btnEmployee.Enabled = false;
+            }
+            else 
+            {
+                if (chucvu == "CV003")
+                    btnEmployee.Enabled = false;
             }
         }
     }
