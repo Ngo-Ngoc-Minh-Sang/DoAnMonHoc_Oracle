@@ -520,7 +520,29 @@ select dh.madonhang, dv.tendv,kh.tenkh,nv.tennv,dh.tennguoinhan,dh.trangthai,dh.
 from donhang dh,khachhang kh,nhanvien nv, dichvu dv
 where dh.makh = kh.makh and dh.manv = nv.manv and dh.madv = dv.madv
 
+/* view donhang*/
+create or replace view ViewDonHang as
+select * from donhang
 
+select * from ViewDonHang
+/*view khachhang*/
+create or replace view ViewKhacHang as
+select * from khachhang
+
+select * from ViewKhacHang
+
+/*view nv*/
+create or replace view ViewNhanVien as
+select * from nhanvien
+
+select * from ViewNhanVien
+
+
+/*view dich vu*/
+create or replace view ViewDichVu as
+select * from dichvu
+
+select * from ViewDichVu
 
 
 
